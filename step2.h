@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-unsigned int findLongestPal(string transmission){
+bool findLongestPal(string transmission){
     int T = transmission.length();
     int fin = 1,inicio = 0;
     int i = 0;
@@ -29,5 +29,5 @@ unsigned int findLongestPal(string transmission){
     }
 
     cout << endl << "Posicion Inicial: " << posicionInicial <<" Posicion Final: " << posicionFinal<< endl;
-    return posicionFinal;
+    return true;
 }
