@@ -1,5 +1,7 @@
 #include <iostream>
 #include <fstream>
+
+#include "step1.h"
 using namespace std;
 
 int main(){
@@ -28,6 +30,13 @@ int main(){
         transmission2 += line;
     };
     transmissionCode2.close();
+
+    findMalicious(transmission1, mcode1);
+    findMalicious(transmission1, mcode2);
+    findMalicious(transmission1, mcode3);
+    findMalicious(transmission2, mcode1);
+    findMalicious(transmission2, mcode2);
+    findMalicious(transmission2, mcode3);
 
     return 0;
 }
