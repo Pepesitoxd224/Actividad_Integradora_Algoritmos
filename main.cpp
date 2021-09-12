@@ -2,6 +2,7 @@
 #include <fstream>
 
 #include "step1.h"
+#include "step2.h"
 using namespace std;
 
 int main(){
@@ -31,12 +32,20 @@ int main(){
     };
     transmissionCode2.close();
 
+    cout << endl << "Parte 1"<< endl;
     findMalicious(transmission1, mcode1);
     findMalicious(transmission1, mcode2);
     findMalicious(transmission1, mcode3);
     findMalicious(transmission2, mcode1);
     findMalicious(transmission2, mcode2);
     findMalicious(transmission2, mcode3);
+    cout << endl << endl << "Parte 2"<< endl;
+
+    longestPalindrome(transmission1);
+    longestPalindrome(transmission2);
+
+    cout << endl << endl << "Parte 3"<< endl;
+
 
     return 0;
 }
