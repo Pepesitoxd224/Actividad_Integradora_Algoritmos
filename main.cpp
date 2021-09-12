@@ -41,8 +41,8 @@ int main(){
     findMalicious(transmission2, mcode3);
     cout << endl << endl << "Parte 2"<< endl;
 
-    longestPalindrome(transmission1);
-    longestPalindrome(transmission2);
+    findLongestPal(transmission1);
+    findLongestPal(transmission2);
 
     cout << endl << endl << "Parte 3"<< endl;
 
